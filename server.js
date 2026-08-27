@@ -30,17 +30,12 @@ app.post("create-item", (req, res) => {
 });
 
 app.get("/author", (req, res) => {
-    res.render('author', {user: user} );
+    res.render("author", { user: user } );
 })
-app.get("/hello", function (req, res) {
-    res.end("<h1>hello my friends</h1>");
+
+app.get("/", function (req, res) {
+    res.render("harid");
 });
-app.get("/gift", function (req, res) {
-    res.end("<h1>Siz sovgalar bolimidasiz</h1>");
-});
-// app.get("/", function (req, res) {
-//     res.render('harid');
-// });
 
 const server = http.createServer(app);
 let PORT = 3000;
