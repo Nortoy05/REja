@@ -1,0 +1,20 @@
+{
+    "name": "Nortoy",
+    "profession": "Software Engineer",
+    "age": 20,
+    "residence": "S.Korea",
+    "adress": "S.Korea, Seoul",
+    "language": ["Uzbek", "Russian", "English", "Korean"],
+    "skills": ["Html", "Css", "Js", "NodeJS", "Python"],
+    "extra-skills": ["Bootstrap", "Materialize", "Styling", "Sass", "Django", "Flask", "GIT Knowledge"],
+    "work_place": "IT Company in Seoul",
+    "service_desc": "Provide best quality of the service and try to solve each problems in company on time!",
+    "about_me": "I am Senior software Engineer and Teamjang in Company in Seoul",
+    "city": "Seoul",
+    "title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
+    "flower-desc": ["what is the Flower?", "what is the Seedlings", "who is a Gardner" ],
+    "flower-name": ["Tulip", "Poppy", "Sunflower", "Rose"],
+    "flower-price": ["12$", "23$", "40$#", "90$" ],
+    "famous-words": ["World is beautiful just Enjoy"],
+    "famous-name": ["Husniddin Tolipov"]
+}

@@ -1,7 +1,18 @@
 console.log("Web Serverni boshlash");
 const express = require("express");
+const res = require("express/lib/response");
 const app = express();
 const http = require("http");
+const fs = require("fs");
+
+let user;
+fs.readFile("database/user.json","utf8", (err, data) => {
+    if(err) {
+        console.log("ERROR:", err);
+    } else {
+        user = JSON.parse(data)
+    }
+});
 
 // 1: Kirish code
 app.use(express.static("public")); 
@@ -14,12 +25,22 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 // 4: Routing code
+app.post("create-item", (req, res) => {
+    //TODO: code with db here
+});
+
+app.get("/author", (req, res) => {
+    res.render('author', {user: user} );
+})
 app.get("/hello", function (req, res) {
     res.end("<h1>hello my friends</h1>");
 });
 app.get("/gift", function (req, res) {
     res.end("<h1>Siz sovgalar bolimidasiz</h1>");
 });
+// app.get("/", function (req, res) {
+//     res.render('harid');
+// });
 
 const server = http.createServer(app);
 let PORT = 3000;
