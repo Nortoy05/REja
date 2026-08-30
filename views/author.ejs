@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/public/main.css" />
+    <link rel="stylesheet" href="/main.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -31,22 +31,22 @@
             <div class="left_1-3"><%=user.profession%></div>
             <div class="left-icons">
               <a class="link_href" href="">
-                <div class="icon"><img src="/public/author/icon/Facebook.svg" class="icon-1" /></div>
+                <div class="icon"><img src="/public/author/icon/facebook.svg" class="icon-1" /></div>
               </a>
               <a class="link_href" href="">
-                <div class="icon"><img src="/public/author/icon/Instagram.svg" class="icon-1" /></div>
+                <div class="icon"><img src="/public/author/icon/instagram.svg" class="icon-1" /></div>
               </a>
               <a class="link_href" href="">
-                <div class="icon"><img src="/public/author/icon/Twitter.svg" class="icon-1" /></div>
+                <div class="icon"><img src="/public/author/icon/twitter.svg" class="icon-1" /></div>
               </a>
               <a class="link_href" href="">
-                <div class="icon"><img src="/public/author/icon/Linkeding.svg" class="icon-1" /></div>
+                <div class="icon"><img src="/public/author/icon/linkeding.svg" class="icon-1" /></div>
               </a>
               <a class="link_href" href="">
                 <div class="icon"><img src="/public/author/icon/Youtube.svg" class="icon-1" /></div>
               </a>
               <a class="link_href" href="">
-                <div class="icon"><img src="/public/author/icon/Dribbble.svg" class="icon-1" /></div>
+                <div class="icon"><img src="/public/author/icon/dribbble.svg" class="icon-1" /></div>
               </a>
             </div>
           </div>
@@ -77,7 +77,7 @@
 
           
           <% var langNames = []; %>
-          <% user.languages.forEach(function(entry){ entry.split(',').forEach(function(l){ langNames.push(l.trim()); }); }); %>
+          <% user.language.forEach(function(entry){ entry.split(',').forEach(function(l){ langNames.push(l.trim()); }); }); %>
           <% var langPercents = [100, 60, 90]; %>
           <div class="left_3">
             <div class="section-title">Languages</div>
@@ -146,7 +146,7 @@
               <a href="#contact" class="btn-hire">HIRE ME <i class="fa fa-arrow-right"></i></a>
             </div>
             <div class="hero-image">
-              <img src="images/profile.png" alt="" />
+              <img src="images/heroprofile.png" alt="" />
             </div>
           </div>
 
@@ -165,7 +165,7 @@
       <p>Mobile App, Website Design</p>
     </div>
     <div class="service-card">
-      <img src="/public/author/menu_icon/Icons_Microphone.png" class="service-icon-img" alt="" />
+      <img src="/public/author/menu_icon/Microphone.png" class="service-icon-img" alt="" />
       <h3>Sound Design</h3>
       <p>Voice Over, Beat Making</p>
     </div>
@@ -175,7 +175,7 @@
       <p>Character Design, Props & Objects</p>
     </div>
     <div class="service-card">
-      <img src="/public/author/menu_icon/Icons_Photographer.png" class="service-icon-img" alt="" />
+      <img src="/public/author/menu_icon/Photographer.png" class="service-icon-img" alt="" />
       <h3>Photography</h3>
       <p>Portrait, Product Photography</p>
     </div>
