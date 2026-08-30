@@ -3,7 +3,7 @@
     "profession": "Software Engineer",
     "age": 20,
     "residence": "S.Korea",
-    "adress": "S.Korea, Seoul",
+    "address": "S.Korea, Seoul",
     "language": ["Uzbek", "Russian", "English", "Korean"],
     "skills": ["Html", "Css", "Js", "NodeJS", "Python"],
     "extra-skills": ["Bootstrap", "Materialize", "Styling", "Sass", "Django", "Flask", "GIT Knowledge"],
