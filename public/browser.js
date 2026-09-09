@@ -6,10 +6,10 @@ function itemTemplate(item) {
         >
           <span class="item-text">${item.reja}</span>
           <div>
-            <button  data-id="${item._id}>"  class="edit-me btn btn-secondary btn-sm mr-1">
+            <button data-id="${item._id}" class="edit-me btn btn-secondary btn-sm mr-1">
               O'zgartirish
             </button>
-            <button data-id="${item._id}>"  class="delete-me btn btn-danger btn-sm">O'chirish</button>
+            <button data-id="${item._id}" class="delete-me btn btn-danger btn-sm">O'chirish</button>
           </div>
         </li>`;
 }
@@ -32,7 +32,7 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
 });
 
 document.addEventListener("click", function (e) {
-    // delete oper
+  // delete oper
   if (e.target.classList.contains("delete-me")) {
     if (confirm("Aniq o'chirmoqchimisiz ?")) {
       axios
@@ -47,27 +47,32 @@ document.addEventListener("click", function (e) {
     }
   }
 
-  //edit oper
+  // edit oper
   if (e.target.classList.contains("edit-me")) {
-    let userInput = prompt("Ozgartirish kiriting", e.target.parentElelment.parentElelment.querySelector(".item-text").innerHTML
-);
-if (userInput) {
-    axios.post("/edit-item", {id: e.target.getAttribute("data-id"), new_input: userInput,
-    })
-    .then((response) => {
-        console.log(response.data);
-        e.target.parentElelment.parentElelment.querySelector(".item-text").innerHTML = userInput;
-    })
-    .catch((err) => {
-        console.log("Iltimosqaytadan harakat qiling!");
-    }); 
-}
+    let userInput = prompt(
+      "Ozgartirish kiriting",
+      e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+    );
+    if (userInput) {
+      axios
+        .post("/edit-item", {
+          id: e.target.getAttribute("data-id"),
+          new_input: userInput,
+        })
+        .then((response) => {
+          console.log(response.data);
+          e.target.parentElement.parentElement.querySelector(".item-text").innerHTML = userInput;
+        })
+        .catch((err) => {
+          console.log("Iltimos qaytadan harakat qiling!");
+        });
+    }
   }
 });
 
 document.getElementById("clean-all").addEventListener("click", function () {
-    axios.post("/delete-all", { delete_all: true }).then((response) => {
-        alert(response.data.state);
-        document.location.reload();
-    });
+  axios.post("/delete-all", { delete_all: true }).then((response) => {
+    alert(response.data.state);
+    document.location.reload();
+  });
 });
