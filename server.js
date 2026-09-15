@@ -17,13 +17,13 @@ mongodb.connect(
 
       const app = require("./app");
       const server = http.createServer(app);
-      let PORT = process.env.PORT || 3000;
+      let PORT = process.env.PORT || 7000;
 
       server.listen(PORT, function () {
         console.log(
-          ` This server is running successfully on port ${PORT} , http://localhost:${PORT},`
+          ` This server is running successfully on port ${PORT} , http://localhost:${PORT},`,
         );
       });
     }
-  }
+  },
 );
