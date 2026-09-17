@@ -1,10 +1,43 @@
 
-// TASK E
-function getReverse(str) {
-    return str.split("").reverse().join("");
+// Task F
+
+function findDoublers(str) {
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j < str.length; j++) {
+      if (str[i] === str[j]) {
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
-console.log(getReverse("learning AI"));
+console.log(findDoublers("SHahar"));
+console.log(findDoublers("Poytaxt"));
+
+//TASK G
+
+function getHighestIndex(arr) {
+  let maxIndex = 0;
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > arr[maxIndex]) {
+      maxIndex = i;
+    }
+  }
+
+  return maxIndex;
+}
+
+console.log(getHighestIndex([5, 21, 12, 21, 8]));
+
+
+// TASK E
+// function getReverse(str) {
+//     return str.split("").reverse().join("");
+// }
+
+// console.log(getReverse("learning AI"));
 
 // TASK D
 
