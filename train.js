@@ -15,6 +15,7 @@ function findDoublers(str) {
 console.log(findDoublers("SHahar"));
 console.log(findDoublers("Poytaxt"));
 
+
 //TASK G
 
 function getHighestIndex(arr) {
