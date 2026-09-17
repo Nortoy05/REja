@@ -40,6 +40,8 @@ console.log(findDoublers("Poytaxt"));
 
 // console.log(getReverse("learning AI"));
 
+console.log(getReverse("learning AI"));
+
 // TASK D
 
 // class Shop {
