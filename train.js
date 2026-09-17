@@ -18,19 +18,19 @@ console.log(findDoublers("Poytaxt"));
 
 //TASK G
 
-function getHighestIndex(arr) {
-  let maxIndex = 0;
+// function getHighestIndex(arr) {
+//   let maxIndex = 0;
 
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > arr[maxIndex]) {
-      maxIndex = i;
-    }
-  }
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > arr[maxIndex]) {
+//       maxIndex = i;
+//     }
+//   }
 
-  return maxIndex;
-}
+//   return maxIndex;
+// }
 
-console.log(getHighestIndex([5, 21, 12, 21, 8]));
+// console.log(getHighestIndex([5, 21, 12, 21, 8]));
 
 
 // TASK E
