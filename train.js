@@ -1,19 +1,46 @@
 
-// Task F
 
-function findDoublers(str) {
-  for (let i = 0; i < str.length; i++) {
-    for (let j = i + 1; j < str.length; j++) {
-      if (str[i] === str[j]) {
-        return true;
-      }
-    }
-  }
-  return false;
+// Task L
+function reverseSentence(str) {
+    return str
+        .split(" ")
+        .map(word => word.split("").reverse().join(""))
+        .join(" ");
 }
 
-console.log(findDoublers("SHahar"));
-console.log(findDoublers("Poytaxt"));
+console.log(reverseSentence("I am learning It!"));
+//Task K
+function countVowels(str) {
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if ("aeiou".includes(str[i].toLowerCase())) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countVowels("Beautiful"));
+
+
+
+// Task F
+
+// function findDoublers(str) {
+//   for (let i = 0; i < str.length; i++) {
+//     for (let j = i + 1; j < str.length; j++) {
+//       if (str[i] === str[j]) {
+//         return true;
+//       }
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(findDoublers("SHahar"));
+// console.log(findDoublers("Poytaxt"));
 
 
 //TASK G
